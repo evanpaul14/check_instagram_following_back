@@ -1,6 +1,6 @@
 # Instagram Following Back Checker
 
-This is a *very* simple script helps you determine who is **not following you back** on Instagram.
+This is a *very* simple app that helps you determine who is **not following you back** on Instagram.
 
 ## Prerequisites
 
@@ -16,3 +16,5 @@ Use these settings:
 Optional (recommended for a smaller export):
 
 - Customize information to only include **Connections > Followers and Following**
+
+You need the JSON files from this export to use the app.
