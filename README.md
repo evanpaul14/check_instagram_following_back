@@ -4,7 +4,7 @@ This is a *very* simple app that helps you determine who is **not following you 
 
 ## Prerequisites
 
-Before running the script, request your Instagram data export from:
+Before running the app, request your Instagram data export from:
 
 `accountscenter.meta.com/info_and_permissions`
 
@@ -17,4 +17,4 @@ Optional (recommended for a smaller export):
 
 - Customize information to only include **Connections > Followers and Following**
 
-You need the JSON files from this export to use the app.
+Download the zip file and extract before using the app.
