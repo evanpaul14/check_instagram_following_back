@@ -32,7 +32,7 @@ jobs:
           pyinstaller --onefile check.py
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: drop-${{ matrix.os }}
           path: dist/
@@ -47,7 +47,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: release-artifacts
           # download all artifacts from previous jobs
