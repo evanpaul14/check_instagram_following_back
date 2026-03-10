@@ -64,7 +64,7 @@ jobs:
           path: release-artifacts
           # download all artifacts from previous jobs
 
-      - name: Create Release
+      - name: Create Release and upload assets
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
@@ -72,12 +72,6 @@ jobs:
           name: ${{ github.event_name == 'push' && github.ref || github.event.inputs.tag }}
           draft: false
           prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload release assets
-        uses: softprops/action-gh-release@v1
-        with:
           files: release-artifacts/**
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
